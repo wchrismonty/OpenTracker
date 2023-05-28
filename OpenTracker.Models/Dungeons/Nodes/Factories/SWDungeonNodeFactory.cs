@@ -161,7 +161,7 @@ namespace OpenTracker.Models.Dungeons.Nodes.Factories
                 case DungeonNodeID.SWBackPastFourTorchRoom:
                     connections.Add(_connectionFactory(
                         dungeonData.Nodes[DungeonNodeID.SWBackPastFirstKeyDoor], node,
-                        _itemRequirements[(ItemType.FireRod, 1)]));
+                        _complexRequirements[ComplexRequirementType.SWFourTorchRoom]));
                     break;
                 case DungeonNodeID.SWBackPastCurtains:
                     connections.Add(_connectionFactory(

@@ -208,10 +208,10 @@ namespace OpenTracker.UnitTests.Models.Dungeons.Nodes.Factories
                             });
                         break;
                     case DungeonNodeID.SWBackPastFourTorchRoom:
-                        ExpectedItemValues.Add(id,
-                            new List<(DungeonNodeID fromNodeID, ItemType type, int count)>
+                        ExpectedComplexValues.Add(id,
+                            new List<(DungeonNodeID fromNodeID, ComplexRequirementType type)>
                             {
-                                (DungeonNodeID.SWBackPastFirstKeyDoor, ItemType.FireRod, 1)
+                                (DungeonNodeID.SWBackPastFirstKeyDoor, ComplexRequirementType.SWFourTorchRoom)
                             });
                         break;
                     case DungeonNodeID.SWBackPastCurtains:

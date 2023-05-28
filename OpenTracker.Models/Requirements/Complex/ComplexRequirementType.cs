@@ -51,6 +51,7 @@ namespace OpenTracker.Models.Requirements.Complex
         WaterWalk,
         WaterWalkFromWaterfallCave,
         LWMirror,
-        DWMirror
+        DWMirror,
+        SWFourTorchRoom
     }
 }

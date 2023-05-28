@@ -59,6 +59,7 @@ namespace OpenTracker.ViewModels.SequenceBreaks
                 SequenceBreakType.BombDuplicationMirror => "Mirror",
                 SequenceBreakType.BombJumpPoDHammerJump => "Palace of Darkness - Hammer Jump",
                 SequenceBreakType.BombJumpSWBigChest => "Skull Woods - Big Chest",
+                SequenceBreakType.BombJumpSWTorch => "Skull Woods - Torch",
                 SequenceBreakType.BombJumpIPBJ => "Ice Palace - IPBJ",
                 SequenceBreakType.BombJumpIPHookshotGap => "Ice Palace - Hookshot Gap",
                 SequenceBreakType.BombJumpIPFreezorRoomGap => "Ice Palace - Freezor Room Gap",

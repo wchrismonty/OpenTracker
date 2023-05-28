@@ -476,6 +476,15 @@ namespace OpenTracker.UnitTests.Models.Requirements.Complex
                         ItemRequirements[(ItemType.Mirror, 1)],
                         WorldStateRequirements[WorldState.StandardOpen]
                     }],
+                    ComplexRequirementType.SWFourTorchRoom => AlternativeRequirements[new HashSet<IRequirement>
+                    {
+                        ItemRequirements[(ItemType.FireRod, 1)],
+                        AggregateRequirements[new HashSet<IRequirement>
+                        {
+                            ItemRequirements[(ItemType.Lamp, 1)],
+                            SequenceBreakRequirements[SequenceBreakType.BombJumpSWTorch]
+                        }]
+                    }],
                     _ => throw new ArgumentOutOfRangeException(nameof(type), type, null)
                 }).ToExpectedObject());
             }

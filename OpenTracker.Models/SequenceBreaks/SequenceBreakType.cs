@@ -22,6 +22,7 @@
         BombDuplicationMirror,
         BombJumpPoDHammerJump,
         BombJumpSWBigChest,
+        BombJumpSWTorch,
         BombJumpIPBJ,
         BombJumpIPHookshotGap,
         BombJumpIPFreezorRoomGap,

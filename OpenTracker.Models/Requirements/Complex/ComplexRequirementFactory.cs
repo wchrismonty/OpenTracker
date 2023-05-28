@@ -508,6 +508,15 @@ namespace OpenTracker.Models.Requirements.Complex
                     _itemRequirements[(ItemType.Mirror, 1)],
                     _worldStateRequirements[WorldState.StandardOpen]
                 }],
+                ComplexRequirementType.SWFourTorchRoom => _alternativeRequirements[new HashSet<IRequirement>
+                {
+                    _itemRequirements[(ItemType.FireRod, 1)],
+                    _aggregateRequirements[new HashSet<IRequirement>
+                    {
+                        _itemRequirements[(ItemType.Lamp, 1)],
+                        _sequenceBreakRequirements[SequenceBreakType.BombJumpSWTorch]
+                    }]
+                }],
                 _ => throw new ArgumentOutOfRangeException(nameof(type), type, null)
             };
         }
