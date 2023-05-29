@@ -138,6 +138,11 @@ namespace OpenTracker.UnitTests.Models.Dungeons.Nodes.Factories
                         {
                             (DungeonNodeID.GT1FLeftPastHammerBlocks, ItemType.Hookshot, 1)
                         });
+                    ExpectedSequenceBreakValues.Add(id,
+                        new List<(DungeonNodeID fromNodeID, SequenceBreakType type)>
+                        {
+                            (DungeonNodeID.GT1FLeftPastHammerBlocks, SequenceBreakType.BombJumpGT1FLeft)
+                        });
                     ExpectedComplexValues.Add(id,
                         new List<(DungeonNodeID fromNodeID, ComplexRequirementType requirementType)>
                         {
@@ -150,7 +155,12 @@ namespace OpenTracker.UnitTests.Models.Dungeons.Nodes.Factories
                         {
                             (DungeonNodeID.GT1FLeftPastHammerBlocks, ItemType.Hookshot, 1)
                         });
-                    ExpectedComplexValues.Add(id,
+                    ExpectedSequenceBreakValues.Add(id,
+                        new List<(DungeonNodeID fromNodeID, SequenceBreakType type)>
+                        {
+                            (DungeonNodeID.GT1FLeftPastHammerBlocks, SequenceBreakType.BombJumpGT1FLeft)
+                        });
+                        ExpectedComplexValues.Add(id,
                         new List<(DungeonNodeID fromNodeID, ComplexRequirementType requirementType)>
                         {
                             (DungeonNodeID.GT1FLeftPastHammerBlocks, ComplexRequirementType.BonkOverLedge),
@@ -202,6 +212,11 @@ namespace OpenTracker.UnitTests.Models.Dungeons.Nodes.Factories
                         new List<(DungeonNodeID fromNodeID, ItemType type, int count)>
                         {
                             (DungeonNodeID.GT1FLeftFiresnakeRoom, ItemType.Hookshot, 1)
+                        });
+                    ExpectedSequenceBreakValues.Add(id,
+                        new List<(DungeonNodeID fromNodeID, SequenceBreakType type)>
+                        {
+                            (DungeonNodeID.GT1FLeftFiresnakeRoom, SequenceBreakType.BombJumpGT1FLeft)
                         });
                     ExpectedComplexValues.Add(id,
                         new List<(DungeonNodeID fromNodeID, ComplexRequirementType requirementType)>

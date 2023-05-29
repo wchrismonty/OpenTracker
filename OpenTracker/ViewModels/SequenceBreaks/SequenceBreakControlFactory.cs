@@ -63,6 +63,7 @@ namespace OpenTracker.ViewModels.SequenceBreaks
                 SequenceBreakType.BombJumpIPBJ => "Ice Palace - IPBJ",
                 SequenceBreakType.BombJumpIPHookshotGap => "Ice Palace - Hookshot Gap",
                 SequenceBreakType.BombJumpIPFreezorRoomGap => "Ice Palace - Freezor Room Gap",
+                SequenceBreakType.BombJumpGT1FLeft => "Ganon's Tower - 1F Left",
                 SequenceBreakType.BombJumpGT1FRightTorch => "Ganon's Tower - 1F Right Torch",
                 SequenceBreakType.DarkRoomDeathMountainEntry => "Death Mountain Entry",
                 SequenceBreakType.DarkRoomDeathMountainExit => "Death Mountain Exit",

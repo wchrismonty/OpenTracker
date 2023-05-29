@@ -26,6 +26,7 @@
         BombJumpIPBJ,
         BombJumpIPHookshotGap,
         BombJumpIPFreezorRoomGap,
+        BombJumpGT1FLeft,
         BombJumpGT1FRightTorch,
         DarkRoomDeathMountainEntry,
         DarkRoomDeathMountainExit,

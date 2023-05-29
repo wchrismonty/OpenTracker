@@ -108,11 +108,17 @@ namespace OpenTracker.Models.Dungeons.Nodes.Factories
                     connections.Add(_connectionFactory(
                         dungeonData.Nodes[DungeonNodeID.GT1FLeftPastHammerBlocks], node,
                         _complexRequirements[ComplexRequirementType.Hover]));
+                    connections.Add(_connectionFactory(
+                        dungeonData.Nodes[DungeonNodeID.GT1FLeftPastHammerBlocks], node,
+                        _sequenceBreakRequirements[SequenceBreakType.BombJumpGT1FLeft]));
                     break;
                 case DungeonNodeID.GT1FLeftPastBonkableGaps:
                     connections.Add(_connectionFactory(
                         dungeonData.Nodes[DungeonNodeID.GT1FLeftPastHammerBlocks], node,
                         _itemRequirements[(ItemType.Hookshot, 1)]));
+                    connections.Add(_connectionFactory(
+                        dungeonData.Nodes[DungeonNodeID.GT1FLeftPastHammerBlocks], node,
+                        _sequenceBreakRequirements[SequenceBreakType.BombJumpGT1FLeft]));
                     connections.Add(_connectionFactory(
                         dungeonData.Nodes[DungeonNodeID.GT1FLeftPastHammerBlocks], node,
                         _complexRequirements[ComplexRequirementType.BonkOverLedge]));
@@ -162,6 +168,9 @@ namespace OpenTracker.Models.Dungeons.Nodes.Factories
                     connections.Add(_connectionFactory(
                         dungeonData.Nodes[DungeonNodeID.GT1FLeftFiresnakeRoom], node,
                         _complexRequirements[ComplexRequirementType.Hover]));
+                    connections.Add(_connectionFactory(
+                        dungeonData.Nodes[DungeonNodeID.GT1FLeftFiresnakeRoom], node,
+                        _sequenceBreakRequirements[SequenceBreakType.BombJumpGT1FLeft]));
                     break;
                 case DungeonNodeID.GT1FFiresnakeRoomKeyDoor:
                     connections.Add(_connectionFactory(
