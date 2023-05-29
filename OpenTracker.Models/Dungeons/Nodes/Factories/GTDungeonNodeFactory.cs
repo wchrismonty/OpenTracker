@@ -207,7 +207,7 @@ namespace OpenTracker.Models.Dungeons.Nodes.Factories
                 case DungeonNodeID.GT1FRightCompassRoom:
                     connections.Add(_connectionFactory(
                         dungeonData.Nodes[DungeonNodeID.GT1FRightFourTorchRoom], node,
-                        _itemRequirements[(ItemType.FireRod, 1)]));
+                        _complexRequirements[ComplexRequirementType.GT1FRightFourTorchRoom]));
                     break;
                 case DungeonNodeID.GT1FRightPastCompassRoomPortal:
                     connections.Add(_connectionFactory(

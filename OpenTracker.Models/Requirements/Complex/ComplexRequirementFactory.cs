@@ -517,6 +517,15 @@ namespace OpenTracker.Models.Requirements.Complex
                         _sequenceBreakRequirements[SequenceBreakType.BombJumpSWTorch]
                     }]
                 }],
+                ComplexRequirementType.GT1FRightFourTorchRoom => _alternativeRequirements[new HashSet<IRequirement>
+                {
+                    _itemRequirements[(ItemType.FireRod, 1)],
+                    _aggregateRequirements[new HashSet<IRequirement>
+                    {
+                        _itemRequirements[(ItemType.Lamp, 1)],
+                        _sequenceBreakRequirements[SequenceBreakType.BombJumpGT1FRightTorch]
+                    }]
+                }],
                 _ => throw new ArgumentOutOfRangeException(nameof(type), type, null)
             };
         }

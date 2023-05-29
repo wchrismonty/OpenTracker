@@ -272,10 +272,10 @@ namespace OpenTracker.UnitTests.Models.Dungeons.Nodes.Factories
                         });
                     break;
                 case DungeonNodeID.GT1FRightCompassRoom:
-                    ExpectedItemValues.Add(id,
-                        new List<(DungeonNodeID fromNodeID, ItemType type, int count)>
+                    ExpectedComplexValues.Add(id,
+                        new List<(DungeonNodeID fromNodeID, ComplexRequirementType type)>
                         {
-                            (DungeonNodeID.GT1FRightFourTorchRoom, ItemType.FireRod, 1)
+                            (DungeonNodeID.GT1FRightFourTorchRoom, ComplexRequirementType.GT1FRightFourTorchRoom)
                         });
                     break;
                 case DungeonNodeID.GT1FRightPastCompassRoomPortal:
